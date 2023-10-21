@@ -1,3 +1,7 @@
+# Diskusi
+
+https://github.com/RammNoMoNeY/kesehatan/discussions
+
 # boemil_1
 
 A new Flutter project.
