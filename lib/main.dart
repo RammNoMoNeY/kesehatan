@@ -1,5 +1,7 @@
-import 'package:boemil_1/halaman_2/dashboard.dart';
+import 'package:boemil_1/user_page/login.dart';
 import 'package:flutter/material.dart';
+// ignore: unused_import
+import 'package:boemil_1/user_page/profile_user/profile.dart';
 
 void main() {
   runApp(const MyApp());
@@ -95,7 +97,7 @@ class FirstOpen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => BottomBar(),
+                      builder: (context) => ProfilePage1(),
                     ),
                   );
                 },
