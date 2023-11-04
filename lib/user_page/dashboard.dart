@@ -5,11 +5,11 @@ import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 import 'package:boemil_1/user_page/login.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const DashboardTes());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class DashboardTes extends StatelessWidget {
+  const DashboardTes({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,8 +22,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
 
 //Hubungkan dari halaman ke halaman lain
 
@@ -60,7 +58,6 @@ class MyApp extends StatelessWidget {
     );
   }
 } */
-
 
 // TAB HALAMAN
 
@@ -297,7 +294,7 @@ class BottomBar extends StatefulWidget {
   State<BottomBar> createState() => _BottomBarState();
 }
 
-  class _BottomBarState extends State<BottomBar> {
+class _BottomBarState extends State<BottomBar> {
   int _selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
@@ -320,9 +317,9 @@ class BottomBar extends StatefulWidget {
       ),
       bottomNavigationBar: SalomonBottomBar(
           currentIndex: _selectedIndex,
-          selectedItemColor: const Color(0xff6200ee),
-          unselectedItemColor: Color.fromARGB(255, 255, 255, 255),
-          backgroundColor: Colors.blue,
+          selectedItemColor: Color.fromARGB(244, 241, 7, 198),
+          unselectedItemColor: Color.fromARGB(255, 0, 0, 0),
+          backgroundColor: Color.fromARGB(255, 224, 224, 224),
           onTap: (index) {
             setState(() {
               _selectedIndex = index;
@@ -333,26 +330,25 @@ class BottomBar extends StatefulWidget {
   }
 }
 
-
 final _navBarItems = [
   SalomonBottomBarItem(
     icon: const Icon(Icons.home),
     title: const Text("Home"),
-    selectedColor: const Color.fromARGB(255, 255, 255, 255),
+    selectedColor: Color.fromARGB(255, 232, 121, 188),
   ),
   SalomonBottomBarItem(
     icon: const Icon(Icons.schedule),
     title: const Text("Jadwal"),
-    selectedColor: Colors.white,
+    selectedColor: Color.fromARGB(255, 232, 121, 188),
   ),
   SalomonBottomBarItem(
     icon: const Icon(Icons.bar_chart_outlined),
     title: const Text("Janin"),
-    selectedColor: Colors.white,
+    selectedColor: Color.fromARGB(255, 232, 121, 188),
   ),
   SalomonBottomBarItem(
     icon: const Icon(Icons.monitor_weight_outlined),
     title: const Text("Berat Badan"),
-    selectedColor: Colors.white,
+    selectedColor: Color.fromARGB(255, 232, 121, 188),
   ),
 ];

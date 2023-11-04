@@ -2,6 +2,7 @@ import 'package:boemil_1/user_page/login.dart';
 import 'package:flutter/material.dart';
 // ignore: unused_import
 import 'package:boemil_1/user_page/profile_user/profile.dart';
+/* import 'package:boemil_1/user_page/dashboard.dart'; */
 
 void main() {
   runApp(const MyApp());
@@ -38,7 +39,7 @@ class FirstOpen extends StatelessWidget {
             end: Alignment(0.89, -0.45),
             colors: [
               Color(0xFFFE9CBF),
-              Color(0xFFFE9CBF),
+              Color.fromARGB(255, 254, 156, 191),
             ],
           ),
         ),
@@ -77,9 +78,9 @@ class FirstOpen extends StatelessWidget {
               Center(
                 child: Container(
                   width: 250,
-                  height: 230,
+                  height: 250,
                   child: Image.asset(
-                    'assets/images/bumils.png',
+                    'assets/images/bumils2.png',
                     fit: BoxFit.contain,
                   ),
                 ),

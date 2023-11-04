@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:boemil_1/user_page/profile_user/profiledata.dart';
 
 /* void main() {
   runApp(const MyApp());
@@ -400,15 +401,48 @@ class _TopPortion extends StatelessWidget {
         Container(
           margin: const EdgeInsets.only(bottom: 50),
           decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                  begin: Alignment.bottomCenter,
-                  end: Alignment.topCenter,
-                  colors: [
-                    Color(0xffffcece), Color(0xffffcece)]),
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(0),
-                bottomRight: Radius.circular(0),
-              )),
+            gradient: LinearGradient(
+              begin: Alignment.bottomCenter,
+              end: Alignment.topCenter,
+              colors: [
+                Color.fromARGB(255, 254, 156, 191),
+                Color.fromARGB(255, 254, 156, 191)
+              ],
+            ),
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(0),
+              bottomRight: Radius.circular(0),
+            ),
+          ),
+        ),
+        //Tombol tutup
+        Positioned(
+          right: 0,
+          top: 0,
+          child: ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ProfilSaya(),
+                ),
+              );
+            },
+            style: ElevatedButton.styleFrom(
+              primary: Color.fromARGB(
+                  100, 107, 107, 107), // Warna latar belakang tombol
+            ),
+            child: Text(
+              'Tutup',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 14.55,
+                fontFamily: 'Mulish',
+                fontWeight: FontWeight.w600,
+                letterSpacing: 0.12,
+              ),
+            ),
+          ),
         ),
         Align(
           alignment: Alignment.bottomCenter,
@@ -437,6 +471,22 @@ class _TopPortion extends StatelessWidget {
                       margin: const EdgeInsets.all(8.0),
                       decoration: const BoxDecoration(
                           color: Colors.green, shape: BoxShape.circle),
+                    ),
+                  ),
+                ), */
+                // tutup
+                /*  Positioned(
+                  left: 322,
+                  top: -6,
+                  child: Text(
+                    'Tutup',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Color(0xFF292186),
+                      fontSize: 14.55,
+                      fontFamily: 'Mulish',
+                      fontWeight: FontWeight.w600,
+                      letterSpacing: 0.12,
                     ),
                   ),
                 ), */
